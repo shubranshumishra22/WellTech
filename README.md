@@ -1,0 +1,10 @@
+A Health Care Web App
+
+Website designed to revolutionize healthcare accessibility and mental health support.
+Main features include:
+   - Health Test Recommendation System
+   - Mental Health Chat Box
+Utilizes cutting-edge technologies such as:
+   - Machine Learning (ML)
+   - Natural Language Processing (NLP)
+Aim is to simplify diagnosis and offer compassionate guidance within one user-friendly platform.
