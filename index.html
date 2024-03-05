@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DOC AI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "assets/css/main.css" />
+        <link rel = "stylesheet" href = "assets/css/utilities.css" />
+        <!-- normalize.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            /* Banner Animation */
+            .banner-content {
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeInUpBanner 1s ease-out forwards;
+            }
+    
+            /* Services Animation */
+            .services-item, .sc-feedback .feedback-item {
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeInUpServices 1s ease-out forwards;
+            }
+    
+            /* Feedback Animation */
+            .sc-feedback .feedback-list {
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeInUpFeedback 1s ease-out forwards;
+            }
+    
+            /* Keyframes for the fade-in animation */
+            @keyframes fadeInUpBanner {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    
+            @keyframes fadeInUpServices {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    
+            @keyframes fadeInUpFeedback {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="page-wrapper">
+            <!-- header -->
+            <header class = "header">
+                <nav class = "navbar">
+                    <div class="container">
+                        <div class="navbar-content d-flex justify-content-between align-items-center">
+                            <div class = "brand-and-toggler d-flex align-items-center justify-content-between">
+                                <a href = "#" class = "navbar-brand d-flex align-items-center">
+                                    
+                                    <span class="brand-text fw-7"><img src="./assets/images/welltech_logo.png"></img></span>
+                                </a>
+                                <button type = "button" class = "d-none navbar-show-btn">
+                                    <i class = "fas fa-bars"></i>
+                                </button>
+                            </div>
+
+                            <div class = "navbar-box">
+                                <button type = "button" class = "navbar-hide-btn">
+                                    <i class = "fas fa-times"></i>
+                                </button>
+
+                                <ul class = "navbar-nav d-flex align-items-center">
+                                    <li class = "nav-item">
+                                        <a href = "#" class = "nav-link text-white nav-active text-nowrap">Home</a>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href = "#ourservices" class = "nav-link text-white nav-active text-nowrap">Services</a>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href = "#profile" class = "nav-link text-white nav-active text-nowrap">Your Profile</a>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href = "./assets/contactform.html" class = "nav-link text-white nav-active text-nowrap">Contact Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="signup.html" class="nav-link text-white nav-active text-nowrap">Login/Signup</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="element-one">
+                    <img src = "assets/images/element-img-1.png" alt = "">
+                </div>
+
+                <div class="banner">
+                    <div class="container">
+                        <div class="banner-content">
+                            <div class="banner-left">
+                                <div class="content-wrapper">
+                                    <h1 class="banner-title">Your Wellness, <br> Our Priority</h1>
+                                    <p class="text text-white">Unlock personalized healthcare insights with our cutting-edge lab tester recommendation system.</p>
+                                    <a href = "http://localhost:8501/" class="btn btn-secondary">Check Health</a>
+                                </div>
+                            </div>
+
+                            <div class = "banner-right d-flex align-items-center justify-content-end">
+                                <img src = "assets/images/banner-image.png" alt = "">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end of header -->
+
+            <main>
+                <div id="ourservices">
+                <section class = "sc-services">
+                    <div class = "services-shape">
+                        <img src = "assets/images/curve-shape-1.png" alt = "">
+                    </div>
+                    <div class="container">
+                        <div class = "services-content">
+                            <div class="title-box text-center">
+                                <div class = "content-wrapper">
+                                    <h3 class = "title-box-name">Our services</h3>
+                                    <div class = "title-separator mx-auto"></div>
+                                    <p class = "text title-box-text">Doc AI, an advanced healthcare technology, employs artificial intelligence to analyze extensive medical data with precision. Facilitating diagnosis and treatment planning, it enhances patient outcomes, streamlines operations, and contributes to ongoing medical advancements through its data-driven approach.</p>
+                                </div>
+                            </div>
+
+                            <div class = "services-list">
+                                <div class = "services-item">
+                                    <div class = "item-icon">
+                                        <img src = "assets/images/service-icon-1.png" alt = "service icon">
+                                    </div>
+                                    <h5 class = "item-title fw-7">Find Docs/Labs</h5>
+                                    <p class = "text">Choose your doctor form thousands of specialist, general and trusted hospitals.</p>
+                                </div>
+
+                                <div class = "services-item">
+                                    <a href="http://localhost:8501/">
+                                    <div class = "item-icon">
+                                        <img src = "assets/images/service-icon-2.png" alt = "service icon">
+                                    </div>
+                                    <h5 class = "item-title fw-7" >Check Health</h5>
+                                    <p class = "text">Get yourself checked regularly </p>
+                                    </a>
+                                </div>
+
+                                <div class = "services-item">
+                                    <a href="http://localhost/health.bc/gettest.php">
+                                    <div class = "item-icon">
+                                        <img src = "assets/images/service-icon-3.png" alt = "service icon">
+                                    </div>
+                                    <h5 class = "item-title fw-7">Test Recommendations</h5>
+                                    <p class = "text">Get Accurate Lab Test recommendation based on your Health reports</p>
+                                    </a>
+                                </div>
+
+                                
+                            </div>
+
+                           
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+                <div id="profile">
+                <section class = "sc-grid sc-grid-one">
+                    <div class="container">
+                        <div class = "grid-content d-grid align-items-center">
+                            <div class = "grid-img">
+                                <img src = "assets/images/health-care-img.png" alt = "">
+                            </div>
+                            <div class = "grid-text">
+                                <div class = "content-wrapper text-start">
+                                    <div class = "title-box">
+                                        <h3 class = "title-box-name text-white">
+                                            Build Your Profile </h3>
+                                        <div class = "title-separator mx-auto"></div>
+                                    </div>
+
+                                    <p class = "text title-box-text text-white">This will increase our recommendation precision for you.</p>
+                                    <button type = "button" class = "btn btn-white-outline"><a href="profile.html">Get Started</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+                
+
+                <div id="mobile">
+                <section class = "sc-grid sc-grid-two">
+                    <div class = "container">
+                        <div class = "grid-content d-grid align-items-center">
+                            <div class = "grid-img">
+                                <img src = "assets/images/download-image.png" alt = "">
+                            </div>
+                            <div class = "grid-text">
+                                <div class = "content-wrapper text-start">
+                                    <div class = "title-box">
+                                        <h3 class = "title-box-name">Download our mobile apps</h3>
+                                        <div class = "title-separator mx-auto"></div>
+                                    </div>
+                                    <p class = "text title-box-text">Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
+                                    <button type = "button" class = "btn btn-primary-outline">
+                                        Download
+                                        <img src = "assets/images/arrow-down.svg" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+                
+
+                
+            </main>
+                <div class="chatbox">
+                    <!-- <h2 class="textbot">Let's talk!</h2> -->
+                    <iframe
+                    allow="microphone;"
+                    width="320"
+                    height="370"
+                        src="https://console.dialogflow.com/api-client/demo/embedded/25587c4a-9230-4a21-b22a-14f05d90a97f">
+                    </iframe>
+                        
+                    </a>
+            
+                </div>
+
+            <footer class = "footer">
+                <div class = "container">
+                    <div class = "footer-content">
+                        <div class = "footer-list d-grid text-white">
+                            <div class = "footer-item">
+                                <a href = "#" class = "navbar-brand d-flex align-items-center">
+                                    <span class = "brand-shape d-inline-block text-white">M</span>
+                                    <span class = "brand-text fw-7">Doc AI</span>
+                                </a>
+                                <p class = "text-white">Unlock personalized healthcare insights with our cutting-edge lab tester recommendation system.</p>
+                                <p class = "text-white copyright-text">&copy; Doc AI Pvt LTD 2024. All rights reserved.</p>
+                            </div>
+
+                            <div class = "footer-item">
+                                <h3 class = "footer-item-title">Company</h3>
+                                <ul class = "footer-links">
+                                    <li><a href = "#">About</a></li>
+                                    <li><a href = "#">Health Check</a></li>
+                                    <li><a href = "#">My Profile</a></li>
+                                </ul>
+                            </div>
+
+                            
+
+                            <div class = "footer-item">
+                                <h3 class = "footer-item-title">Help</h3>
+                                <ul class = "footer-links">
+                                    <li><a href = "#">Help center</a></li>
+                                    <li><a href = "./assets/contactform.html">Contact support</a></li>
+                                    <li><a href = "#">Instructions</a></li>
+                                    <li><a href = "#">How it works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "footer-element-1">
+                    <img src = "assets/images/element-img-4.png" alt = "">
+                </div>
+                <div class = "footer-element-2">
+                    <img src = "assets/images/element-img-5.png" alt = "">
+                </div>
+            </footer>
+        </div>
+        
+    
+
+
+
+
+
+
+        <!-- jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <!-- owl carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- custom js -->
+        <script src = "assets/js/script.js"></script>
+    </body>
+</html>

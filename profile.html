@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<form id="profileForm">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="healthHistory">Health History:</label>
+    <textarea id="healthHistory" name="healthHistory" rows="4"></textarea>
+
+    <label for="familyHistory">Family History of Genetic Diseases:</label>
+    <textarea id="familyHistory" name="familyHistory" rows="4"></textarea>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<script>
+    function submitForm() {
+        var fullName = document.getElementById('fullName').value;
+        var age = document.getElementById('age').value;
+        var gender = document.getElementById('gender').value;
+        var healthHistory = document.getElementById('healthHistory').value;
+        var familyHistory = document.getElementById('familyHistory').value;
+
+        // You can now use these values to store in your database or perform further actions.
+
+        // For demonstration purposes, let's just log the values to the console.
+        console.log("Full Name: " + fullName);
+        console.log("Age: " + age);
+        console.log("Gender: " + gender);
+        console.log("Health History: " + healthHistory);
+        console.log("Family History: " + familyHistory);
+    }
+</script>
+
+</body>
+</html>
